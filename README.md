@@ -7,32 +7,95 @@
 |-- bookdinner
 |  `--build
 |      |--classes
-|      |    |--   
+|      |    |--action
+|      |    |--dao
+|      |    |--model
+|      |    |--service
+|      |    |--util 
 |  `--src
 |      |--com
+|      |    |--action
+|      |         |--goodsAction.java
+|      |         |--adminAction.java
+|      |         |--buyAction.java
+|      |         |--catelogAction.java
+|      |         |--goodsAction.java
+|      |         |--indexAction.java
+|      |         |--liuyanAction.java
+|      |         |--UserAction.java
+|      |    |--dao
+|      |         |--TAdminDAO.java
+|      |         |--TCatelogDAO.java
+|      |         |--TGoodsDAO.java
+|      |         |--TliuyanDAO.java
+|      |         |--TOrderltemDAO.java
+|      |         |--TUserDAO.classeeer
+|      |    |--model
+|      |    |--service
+|      |         |--careService.java
+|      |         |--catelogService.java
+|      |         |--loginService.java
+|      |    |--util
 |      |
 |  `--WebContent
 |      |--admin
+|      |    |--admin
+|      |         |--adminAdd.jsp
+|      |         |--adminManage.jsp
+|      |         |--adminManageFenye.jsp
+|      |    |--catelog
+|      |         |--catelogAdd.jsp
+|      |         |--catelogMana.jsp
+|      |    |--goods
+|      |         |--goodsDetailHou.jsp
+|      |         |--goodsManaNoTejia.jsp
+|      |         |--goodsNoTejiaAdd.jsp
+|      |    |--index
+|      |         |--sysPro.jsp
+|      |    |--js    JS中outlookbar.additem(设置个人中心下拉菜单样式)
+|      |    |--liuyan
+|      |         |--liuyanMana.jsp
+|      |    |--order
+|      |         |--orderDetail.jsp
+|      |         |--orderMana.jsp
+|      |         |--userXinxi.jsp
+|      |    |--user
+|      |         |--userMana.jsp
+
+|      |         |--userMana.jsp
+|      |         |--userPw.jsp
+|      |    `--index.jsp
+|      |    `--menu.jsp
+|      |    `--top.jsp
 |      |--common
+|      |         |--add_success.jsp
+|      |         |--succ.jsp
+|      |         |--succeed.jsp
 |      |--css
-|      |--fckeditor
+|      |--fckeditor(不知道啥作用目前)
 |      |--img
 |      |--META-INF
 |      |My97DatePicker
-|      |qiantai
+|      |qiantai（目录参考admin）
 |      |updown
 |      |upload
 |      |WEB-INF
-
+|      |login.jsp
+|      |loginSuccess.jsp
 ```
 
--`com`来不及写完了
-当前已完成对食堂订餐页面进行复刻明日进行修改完善，解决了昨天的数据库500错误问题（数据库表名写错了）
+-`qiantai`来不及写完了
+完成首页等JSP页面的布局
+主要就是类似前端美化部分代码
 
-##JSP页面已完成部分界面
-页面详情请转至博客园进行参考
 
-##完善数据库，主KEY等完善
+##完善数据库（仍存在的问题）
+比如注册要有
+user_name user_pw user_realname user_address user_sex user_tel user_email user_qq
+自己也比较偷懒并没有对此格式进行要求。。
+有时间再改吧前端美化太难看了
+
+
 
 
 contributor BY 党岩松&&杨坤
